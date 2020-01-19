@@ -1,4 +1,4 @@
-/* --------- Fonte Face ---------*/
+/* --------- Font Face ---------*/
 @font-face {
   font-family: "SunFlower-Medium";
   src: url("/assets/fonts/Sunflower-Medium.woff") format("woff");
@@ -25,6 +25,14 @@
   src: url("/assets/fonts/Tajawal-Light.woff") format("woff");
   font-weight: light;
   font-style: normal;
+}
+/* --------- Font Classe ---------*/
+body h1 {
+  font-family: "SunFlower-Bold";
+  text-transform: uppercase;
+}
+body h2 {
+  font-family: "SunFlower-Medium";
 }
 /* --------- Header ---------*/
 header {
@@ -107,4 +115,13 @@ main {
 .logos .logo-ld {
   height: auto;
   width: 100px;
+}
+
+.accueil .texte {
+  text-align: left;
+  color: white;
+  border: 2px solid red;
+  position: absolute;
+  left: 50px;
+  top: 250px;
 }
