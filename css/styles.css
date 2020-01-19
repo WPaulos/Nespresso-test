@@ -1,0 +1,110 @@
+/* --------- Fonte Face ---------*/
+@font-face {
+  font-family: "SunFlower-Medium";
+  src: url("/assets/fonts/Sunflower-Medium.woff") format("woff");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SunFlower-Bold";
+  src: url("/assets/fonts/Sunflower-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tajawal-ExtraLight";
+  src: url("/assets/fonts/Tajawal-ExtraLight.woff") format("woff");
+  font-weight: extralight;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tajawal-Light";
+  src: url("/assets/fonts/Tajawal-Light.woff") format("woff");
+  font-weight: light;
+  font-style: normal;
+}
+/* --------- Header ---------*/
+header {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+header .logo {
+  width: auto;
+  height: 40px;
+  position: absolute;
+  left: 60px;
+}
+
+header .menu {
+  height: 100%;
+  width: 700px;
+  position: absolute;
+  padding-left: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Sunflower-Bold";
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu li:hover {
+  color: #b4a77e;
+}
+
+header .users {
+  height: 25px;
+  width: auto;
+  position: absolute;
+  right: 120px;
+}
+
+header .panier {
+  height: 22px;
+  width: auto;
+  position: absolute;
+  right: 65px;
+}
+/* --------- Accueil ---------*/
+main {
+  margin-top: 50px;
+}
+
+.accueil {
+  height: 703px;
+  background: url("/assets/img/decor.png");
+  display: flex;
+  justify-content: center;
+}
+
+.accueil .logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 80px;
+  width: 150px;
+  height: 80px;
+}
+
+.logos .logo-n {
+  height: auto;
+  width: 150px;
+}
+
+.logos .logo-ld {
+  height: auto;
+  width: 100px;
+}
