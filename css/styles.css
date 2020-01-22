@@ -1,5 +1,12 @@
 /* --------- Font Face ---------*/
 @font-face {
+  font-family: "SunFlower-Light";
+  src: url("/assets/fonts/Sunflower-Light\ \(1\).woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "SunFlower-Medium";
   src: url("/assets/fonts/Sunflower-Medium.woff") format("woff");
   font-weight: medium;
@@ -16,24 +23,17 @@
 @font-face {
   font-family: "Tajawal-ExtraLight";
   src: url("/assets/fonts/Tajawal-ExtraLight.woff") format("woff");
-  font-weight: extralight;
+  font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Tajawal-Light";
   src: url("/assets/fonts/Tajawal-Light.woff") format("woff");
-  font-weight: light;
+  font-weight: lighter;
   font-style: normal;
 }
-/* --------- Font Classe ---------*/
-body h1 {
-  font-family: "SunFlower-Bold";
-  text-transform: uppercase;
-}
-body h2 {
-  font-family: "SunFlower-Medium";
-}
+
 /* --------- Header ---------*/
 header {
   background-color: black;
@@ -69,6 +69,7 @@ header .menu {
 
 .menu li:hover {
   color: #b4a77e;
+  cursor: pointer;
 }
 
 header .users {
@@ -84,6 +85,7 @@ header .panier {
   position: absolute;
   right: 65px;
 }
+
 /* --------- Accueil ---------*/
 main {
   margin-top: 50px;
@@ -91,7 +93,7 @@ main {
 
 .accueil {
   height: 703px;
-  background: url("/assets/img/decor.png");
+  background: url("/assets/img/fond.png");
   display: flex;
   justify-content: center;
 }
@@ -120,8 +122,40 @@ main {
 .accueil .texte {
   text-align: left;
   color: white;
-  border: 2px solid red;
   position: absolute;
-  left: 50px;
+  left: 150px;
   top: 250px;
+}
+
+.accueil .texte h1 {
+  font-family: "SunFlower-Bold";
+  text-transform: uppercase;
+  font-size: 48px;
+  padding-bottom: 20px;
+  line-height: 65px;
+}
+
+.accueil .texte h2 {
+  font-family: "SunFlower-Light";
+  font-size: 23px;
+  text-transform: uppercase;
+  opacity: 50%;
+}
+
+.accueil .texte h3 {
+  font-family: "Tajawal-Light";
+  font-size: 20px;
+  line-height: 25px;
+  padding-bottom: 35px;
+}
+
+.accueil .texte button {
+  background-color: #f2f2f2;
+  border: 3px solid #b4a77e;
+  border-radius: 50px;
+  font-family: "Sunflower-Medium";
+  font-size: 20px;
+  padding-bottom: 10px;
+
+  position: relative;
 }
