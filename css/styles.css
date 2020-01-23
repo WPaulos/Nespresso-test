@@ -51,6 +51,7 @@ header .logo {
   height: 40px;
   position: absolute;
   left: 60px;
+  cursor: pointer;
 }
 
 header .menu {
@@ -177,6 +178,7 @@ main {
   text-align: center;
   position: relative;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*-----capsule-----*/
